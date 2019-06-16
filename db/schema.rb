@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190615124021) do
+ActiveRecord::Schema.define(version: 20190616131735) do
 
 # Could not dump table "users" because of following StandardError
 #   Unknown type 'boolern' for column 'admin'
