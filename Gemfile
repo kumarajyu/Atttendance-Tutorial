@@ -15,7 +15,7 @@ gem 'turbolinks',              '~> 5'
 gem 'jbuilder',                '~> 2.5'
 
 group :development, :test do
-  gem 'sqlite3',               '~> 1.3.0'
+  gem 'sqlite3', '1.3.13'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -27,7 +27,10 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
+  #アプリケーションの詳細ログ
+  gem 'rails_12factor'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
